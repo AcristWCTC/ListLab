@@ -28,8 +28,7 @@ public class Challenge3 {
         mixedList.add(d2);
         
         
-        for (int i = 0; i < mixedList.size(); i++){
-            Object obj = mixedList.get(i);
+        for (Object obj : mixedList) {
             if (obj instanceof Employee){
                 Employee e = (Employee)obj;
                 System.out.println(e);
@@ -38,8 +37,6 @@ public class Challenge3 {
                 System.out.println(d);
             }
             System.out.println("--------------------------");
-            
-            
         }
     }
         
