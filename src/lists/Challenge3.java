@@ -30,6 +30,7 @@ public class Challenge3 {
         
         for (int i = 0; i<mixedList.size(); i++){
             System.out.println(mixedList.get(i).toString());
+            System.out.println("--------------------------");
         }
     }
         
