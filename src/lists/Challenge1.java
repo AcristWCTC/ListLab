@@ -27,7 +27,8 @@ public class Challenge1 {
         hobbiesList.add("Coding");
         
         for (int i = 0; i < hobbiesList.size(); i++){
-            System.out.println(hobbiesList.get(i).toString());
+            String hobby = (String)hobbiesList.get(i);
+            System.out.println(hobby);
         }
         
         System.out.println("");
@@ -38,7 +39,8 @@ public class Challenge1 {
         hobbiesList.add("More Games");
         
         for (int i = 0; i < hobbiesList.size(); i++){
-            System.out.println(hobbiesList.get(i).toString());
+            String hobby = (String)hobbiesList.get(i);
+            System.out.println(hobby);
         }
         
         
@@ -50,7 +52,8 @@ public class Challenge1 {
         hobbiesList.remove("More Games");
         
         for (int i = 0; i < hobbiesList.size(); i++){
-            System.out.println(hobbiesList.get(i).toString());
+            String hobby = (String)hobbiesList.get(i);
+            System.out.println(hobby);
         }
         
         
