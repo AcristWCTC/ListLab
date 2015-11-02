@@ -17,15 +17,15 @@ public class Challenge3 {
         
     
         Employee e1 = new Employee("Nana", "Bob", "304-11-9246");
-        Dog d2 = new Dog("Falsa", 123449215);
-        Employee e3 = new Employee("Beleran", "Joe", "639-25-2256");
-        Dog d4 = new Dog("Bolas", 669257813);
+        Dog d1 = new Dog("Falsa", 123449215);
+        Employee e2 = new Employee("Beleran", "Joe", "639-25-2256");
+        Dog d2 = new Dog("Bolas", 669257813);
         
         List mixedList = new ArrayList();
         mixedList.add(e1);
+        mixedList.add(d1);
+        mixedList.add(e2);
         mixedList.add(d2);
-        mixedList.add(e3);
-        mixedList.add(d4);
         
         
         for (int i = 0; i < mixedList.size(); i++){
