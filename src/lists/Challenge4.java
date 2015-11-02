@@ -33,8 +33,9 @@ public class Challenge4 {
         }
         
         Set<Employee> employeeSet = new LinkedHashSet<>(employeeList);
-        employeeList.clear();
         employeeList.addAll(employeeSet);
+        employeeList.clear();
+        
 
         employeeSet.addAll(employeeList);
         employeeSet.clear();
@@ -43,6 +44,8 @@ public class Challenge4 {
         for (Employee employ: employeeList){
             System.out.println(employ.getFirstName() + " " + employ.getSsn());
         }
+        
+        
         
 
         
