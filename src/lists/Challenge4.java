@@ -33,12 +33,9 @@ public class Challenge4 {
         }
         
         Set<Employee> employeeSet = new LinkedHashSet<>(employeeList);
-        employeeList.addAll(employeeSet);
-        employeeList.clear();
         
+        employeeList = new ArrayList<>(employeeSet);
 
-        employeeSet.addAll(employeeList);
-        employeeSet.clear();
         
         System.out.println("\nDisplaying list after use of set...");
         for (Employee employ: employeeList){
