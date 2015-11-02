@@ -16,21 +16,30 @@ public class Challenge3 {
     public static void main(String[] args) {
         
     
-        Employee o1 = new Employee("Nana", "Bob", "304-11-9246");
-        Dog o2 = new Dog("Falsa", 123449215);
-        Employee o3 = new Employee("Beleran", "Joe", "639-25-2256");
-        Dog o4 = new Dog("Bolas", 669257813);
+        Employee e1 = new Employee("Nana", "Bob", "304-11-9246");
+        Dog d2 = new Dog("Falsa", 123449215);
+        Employee e3 = new Employee("Beleran", "Joe", "639-25-2256");
+        Dog d4 = new Dog("Bolas", 669257813);
         
         List mixedList = new ArrayList();
-        mixedList.add(o1);
-        mixedList.add(o2);
-        mixedList.add(o3);
-        mixedList.add(o4);
+        mixedList.add(e1);
+        mixedList.add(d2);
+        mixedList.add(e3);
+        mixedList.add(d4);
         
         
-        for (int i = 0; i<mixedList.size(); i++){
-            System.out.println(mixedList.get(i));
+        for (int i = 0; i < mixedList.size(); i++){
+            Object obj = mixedList.get(i);
+            if (obj instanceof Employee){
+                Employee e = (Employee)obj;
+                System.out.println(e);
+            } else if (obj instanceof Dog) {
+                Dog d = (Dog)obj;
+                System.out.println(d);
+            }
             System.out.println("--------------------------");
+            
+            
         }
     }
         

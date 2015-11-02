@@ -18,13 +18,13 @@ public class Challenge2 {
         Employee e2 = new Employee("Falsa", "Tim", "123-44-9215");
         Employee e3 = new Employee("Beleran", "Joe", "639-25-2256");
         
-        List<Employee> employeeList = new ArrayList<>();
-        employeeList.add(e1);
-        employeeList.add(e2);
-        employeeList.add(e3);
+        List<Employee> employeesList = new ArrayList<>();
+        employeesList.add(e1);
+        employeesList.add(e2);
+        employeesList.add(e3);
         
         
-        for (Employee employ: employeeList){
+        for (Employee employ: employeesList){
             System.out.println(employ.getFirstName());
         }
         
